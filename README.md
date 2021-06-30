@@ -7,5 +7,6 @@
 ### Desafios
 
 - [**Paytime**](https://github.com/Pereira-Araujo/desafios/tree/main/desafio_paytime)
+- [**BRLOGIC**](https://github.com/Pereira-Araujo/desafios/tree/main/desafio_brlogic)
 
 <img src="https://codinginfinite.com/wp-content/uploads/2019/05/maxresdefault-1.jpg" width="450" />
