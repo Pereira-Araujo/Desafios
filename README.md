@@ -4,7 +4,10 @@
 
 - Esse repositório foi criado para reunir testes e desafios técnicos com o objetivo paralelo de aprimorá-los futuramente
 
+
 ### Desafios:
+
+**Saiba mais** sobre cada um dos testes clicando sobre seus respectivos links abaixo 🔽
 
  [**Paytime**](https://github.com/Pereira-Araujo/desafios/tree/main/desafio_paytime) **|** [**BRLOGIC**](https://github.com/Pereira-Araujo/desafios/tree/main/desafio_brlogic) **|** [**Vizir**](https://github.com/Pereira-Araujo/desafios/tree/main/desafio_vizir)
 
