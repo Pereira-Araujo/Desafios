@@ -16,7 +16,7 @@ episódios e escutá-los.
 - O resultado pode ser conferido abaixo:
   - [**surge**](https://special-spoon.surge.sh)
 
-## Imagens 
+ ## Imagens ✨
 <details>
   <summary>Imagens podem ser conferidas <b>AQUI</b> </summary>
   
