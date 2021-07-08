@@ -14,6 +14,11 @@ sem o plano"
 - [styled component](https://styled-components.com/)
 - [material-ui](https://material-ui.com/pt/)
 
+## Pontos sobre o código
+
+ - Componentização
+ - Estado Global
+ - Programação Funcional(ao máximo que fui capaz 😆)
 
 ## Resultado
 -  O resultado pode ser conferido em um dos links abaixo:
