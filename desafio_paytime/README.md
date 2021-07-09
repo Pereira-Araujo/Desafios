@@ -4,7 +4,7 @@
 ## Objetivo do desafio
 O objetivo é construir um sistema de consulta por usuário do github e mostrando suas informações.
 
-### Libs
+### O que utilizei
 - [styled component](https://styled-components.com/)
 - [axios](https://axios-http.com/)
 - [material-ui](https://material-ui.com/pt/)
