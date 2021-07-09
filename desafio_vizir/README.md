@@ -10,15 +10,11 @@ códigos das cidades de origem e destino, o tempo da ligação em minutos e esco
 plano FaleMais. O sistema deve mostrar dois valores: (1) o valor da ligação com o plano e (2)
 sem o plano"
 
-### Libs
+### O que utilizei
 - [styled component](https://styled-components.com/)
 - [material-ui](https://material-ui.com/pt/)
+- [Jest](https://jestjs.io/pt-BR/docs/getting-started)
 
-## Pontos sobre o código
-
- - Componentização
- - Estado Global
- - Programação Funcional(ao máximo que fui capaz 😆)
 
 ## Resultado
 -  O resultado pode ser conferido em um dos links abaixo:
