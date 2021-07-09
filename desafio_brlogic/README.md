@@ -6,7 +6,7 @@
 O objetivo do teste é a criação de um app de podcast fictício, onde o usuário poderá visualizar a lista de
 episódios e escutá-los.
 
-### Libs
+### O que utilizei
 - [styled component](https://styled-components.com/)
 - [axios](https://axios-http.com/)
 - [react show more text](https://github.com/devzonetech/react-show-more-text)
