@@ -23,8 +23,9 @@ sem o plano"
   
 
 ## Imagens 
+![image](https://user-images.githubusercontent.com/60116988/123711196-72c8ba80-d846-11eb-9731-618062913bc0.png)
 <details>
-  <summary>Imagens podem ser conferidas <b>AQUI</b> </summary>
+  <summary>Mais imagens podem ser conferidas <b>AQUI</b> </summary>
   
   <h2>Versão desktop<h2>
     
