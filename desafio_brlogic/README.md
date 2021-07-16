@@ -35,7 +35,7 @@ episódios e escutá-los.
 
 </details>
 
-## Instruções para rodar
+### Instruções para rodar
 Por ser um projeto realizado com **ReactJS**, há a necessidade do **NodeJS**. Com ele instalado basta seguir os seguintes passos.
 
 No terminal, clone o projeto:
