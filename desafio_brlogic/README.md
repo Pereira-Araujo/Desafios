@@ -17,8 +17,10 @@ episódios e escutá-los.
   - [**surge**](https://special-spoon.surge.sh)
 
  ## Imagens ✨
+ ![tela inicial](https://user-images.githubusercontent.com/60116988/122657640-dd3d7480-d13b-11eb-8d86-1fd9659cd10a.png)
+
 <details>
-  <summary>Imagens podem ser conferidas <b>AQUI</b> </summary>
+  <summary><b>Mais imagens podem ser conferidas AQUI</b> </summary>
   
   <h2>Versão desktop<h2>
 
