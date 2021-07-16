@@ -14,9 +14,12 @@ O objetivo é construir um sistema de consulta por usuário do github e mostrand
   - https://spotty-reason.surge.sh/
 
 **Obs:** O projeto não se encontra responsivo(*por enquanto*)
+<h2>Imagens</h2> 
+![inicial](https://user-images.githubusercontent.com/60116988/119245281-70d85100-bb4e-11eb-84df-142c775c75bf.png)
+
 
 <details>
-  <summary><h2>Imagens</h2> podem ser conferidas <b>AQUI</b> </summary>
+  <summary><b>Mais imagens podem ser conferidas AQUI</b> </summary>
   
 ![inicial](https://user-images.githubusercontent.com/60116988/119245281-70d85100-bb4e-11eb-84df-142c775c75bf.png)
   
