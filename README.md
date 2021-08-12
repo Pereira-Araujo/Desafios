@@ -11,4 +11,4 @@
 
  [**Paytime**](https://github.com/Pereira-Araujo/desafios/tree/main/desafio_paytime) **|** [**BRLOGIC**](https://github.com/Pereira-Araujo/desafios/tree/main/desafio_brlogic) **|** [**Vizir**](https://github.com/Pereira-Araujo/desafios/tree/main/desafio_vizir)
 
-<img src="https://codinginfinite.com/wp-content/uploads/2019/05/maxresdefault-1.jpg" width="450" />
+<img src="https://64.media.tumblr.com/24533324931cf4844c21bb45025f1a6d/9a1df04281350b47-b9/s500x750/8cf3c7b15a05b275734c8c11ad909eaebe761d77.gifv" width="450" />

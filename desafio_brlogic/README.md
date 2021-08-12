@@ -6,7 +6,7 @@
 O objetivo do teste é a criação de um app de podcast fictício, onde o usuário poderá visualizar a lista de
 episódios e escutá-los.
 
-### Libs
+### O que utilizei
 - [styled component](https://styled-components.com/)
 - [axios](https://axios-http.com/)
 - [react show more text](https://github.com/devzonetech/react-show-more-text)
@@ -17,8 +17,10 @@ episódios e escutá-los.
   - [**surge**](https://special-spoon.surge.sh)
 
  ## Imagens ✨
+ ![tela inicial](https://user-images.githubusercontent.com/60116988/122657640-dd3d7480-d13b-11eb-8d86-1fd9659cd10a.png)
+
 <details>
-  <summary>Imagens podem ser conferidas <b>AQUI</b> </summary>
+  <summary><b>Mais imagens podem ser conferidas AQUI</b> </summary>
   
   <h2>Versão desktop<h2>
 
@@ -35,7 +37,7 @@ episódios e escutá-los.
 
 </details>
 
-## Instruções para rodar
+### Instruções para rodar
 Por ser um projeto realizado com **ReactJS**, há a necessidade do **NodeJS**. Com ele instalado basta seguir os seguintes passos.
 
 No terminal, clone o projeto:
