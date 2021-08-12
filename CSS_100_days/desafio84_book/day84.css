@@ -1,0 +1,64 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 400px;
+  height: 400px;
+  background-color: #e3e7ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#book {
+  width: 200px;
+  height: 280px;
+  background: #48494b;
+  background: linear-gradient(45deg, #48494b 80%, rgb(121, 120, 124) 96%);
+  border-top-right-radius: 3%;
+  border-bottom-right-radius: 3%;
+  box-shadow: -4px 7px 20px -1px #303030;
+}
+
+section {
+  width: 200px;
+  height: 280px;
+  position: absolute;
+}
+article {
+  position: relative;
+  left: 18%;
+  top: 15%;
+  font-family: "Archivo Black";
+  font-size: 24px;
+  color: rgb(247, 247, 247);
+}
+#sub-title {
+  font-family: auto;
+  font-size: 14px;
+}
+
+#book-inside {
+  width: 200px;
+  height: 280px;
+  display: flex;
+  flex-direction: row;
+}
+#border-light {
+  width: 12px;
+  height: 280px;
+  background-color: #494949;
+  box-shadow: 10px 0px 21px 0px rgba(0, 0, 0, 0.45);
+}
+
+#red-mark {
+  margin-left: 140px;
+  width: 10px;
+  height: 281px;
+  align-self: flex-end;
+  background: url(https://cdn.pixabay.com/photo/2015/06/22/22/41/texture-818125_960_720.png);
+  background-size: auto 1px;
+}
