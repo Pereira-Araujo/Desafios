@@ -1,6 +1,6 @@
 # 100 Days CSS Challenges
 
-Diretório para fazer alguns dos desafios presentes no [100 DAYS CSS CHALLENGE](https://100dayscss.com/about/)
+Diretório criado para fazer alguns dos desafios presentes no [100 DAYS CSS CHALLENGE](https://100dayscss.com/about/)
 
 <img src="https://css-weekly.com/wp-content/uploads/2018/10/100-days-css-challenge.jpg" >
 
