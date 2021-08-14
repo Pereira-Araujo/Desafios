@@ -1,1 +1,0 @@
-export const AUTH_URL = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/araujo-muyembe/login"
