@@ -1,0 +1,1 @@
+export const DATA_URL  = "https://rest-fake-user.herokuapp.com/users"
