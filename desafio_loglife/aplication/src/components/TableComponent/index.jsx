@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
-import { Table, Space } from 'antd';
+// import { Table } from 'antd';
 import GlobalStateContext from "../../global/GlobalStateContext";
+import { Container,TableStyle } from './style'
 
 const StickyHeadTable = () => {
   const { clients, setClients } = useContext(GlobalStateContext);
@@ -18,10 +19,9 @@ const StickyHeadTable = () => {
   ]
 
   return (
-    <div>
-      <Table columns={columns} dataSource={data} />
-
-   </div>
+    <Container>
+      <TableStyle columns={columns} dataSource={data} />
+    </Container>
   );
 }
 
