@@ -4,8 +4,14 @@
 
 - Esse repositório foi criado para reunir testes e desafios técnicos com o objetivo paralelo de aprimorá-los futuramente
 
+### DESAFIOS:
 
-### Desafios:
+[**CSS 100 Days**](https://github.com/Pereira-Araujo/desafios/tree/main/CSS_100_days)
+
+[**CodePenChallenges**](https://github.com/Pereira-Araujo/desafios/tree/main/CodePenChallenge)
+
+
+### TESTES:
 
 **Saiba mais** sobre cada um dos testes clicando sobre seus respectivos links abaixo 🔽
 
