@@ -9,6 +9,6 @@
 
 **Saiba mais** sobre cada um dos testes clicando sobre seus respectivos links abaixo 🔽
 
- [**Paytime**](https://github.com/Pereira-Araujo/desafios/tree/main/desafio_paytime) **|** [**BRLOGIC**](https://github.com/Pereira-Araujo/desafios/tree/main/desafio_brlogic) **|** [**Vizir**](https://github.com/Pereira-Araujo/desafios/tree/main/desafio_vizir)
+ [**Paytime**](https://github.com/Pereira-Araujo/desafios/tree/main/testes_tecnicos/desafio_paytime) **|** [**BRLOGIC**](https://github.com/Pereira-Araujo/desafios/tree/main/testes_tecnicos/desafio_brlogic) **|** [**Vizir**](https://github.com/Pereira-Araujo/desafios/tree/main/testes_tecnicos/desafio_vizir)
 
 <img src="https://64.media.tumblr.com/24533324931cf4844c21bb45025f1a6d/9a1df04281350b47-b9/s500x750/8cf3c7b15a05b275734c8c11ad909eaebe761d77.gifv" width="450" />
