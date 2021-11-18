@@ -1,8 +1,6 @@
-
-
 const totalNoPlan = (minuteCost, totalMinutes) => {
-  let totalCost = minuteCost * totalMinutes;
+	let totalCost = Number(minuteCost) * Number(totalMinutes);
 
-  return totalCost;
+	return totalCost;
 };
 export default totalNoPlan;

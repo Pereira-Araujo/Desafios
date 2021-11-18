@@ -1,7 +1,7 @@
 
 
 const difference = (valueNoPlan, valueWithPlan) => {
-  let layBy = valueNoPlan - valueWithPlan;
+  let layBy = Number(valueNoPlan) - Number(valueWithPlan);
 
   return layBy
 };

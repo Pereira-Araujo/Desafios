@@ -1,6 +1,6 @@
 
 const additionalCost = (value) => {
-  let additional = (value / 10) + value;
+  let additional = (Number(value) / 10) + Number(value);
 
   return additional;
 };
