@@ -17,8 +17,7 @@ sem o plano"
 
 
 ## Resultado
--  O resultado pode ser conferido em um dos links abaixo:
-   -   https://cumbersome-harmony.surge.sh/
+-  O resultado pode ser conferido no link abaixo:
    -   https://telzir.araujocoding.repl.co/
   
 
