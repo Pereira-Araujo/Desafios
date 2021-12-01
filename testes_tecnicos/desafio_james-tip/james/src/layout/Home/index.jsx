@@ -2,7 +2,7 @@ import { useContext } from "react";
 import useProtectedPage from "../../hooks/useProtectedPage";
 import GlobalStateContext from "../../global/GlobalStateContext";
 import { Container } from "./styles";
-import { useFilter } from "./../../hooks/useFilter";
+import { useFilter } from "../../hooks/useFilter";
 
 import ContainerPost from "../../components/Posts/ContainerPost/ContainerPost"
 import Header from "../../components/Header/Header";

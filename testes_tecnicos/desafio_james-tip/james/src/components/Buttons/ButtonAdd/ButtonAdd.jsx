@@ -9,7 +9,7 @@ function ButtonAdd() {
   const { open, setOpen } = useContext(GlobalStateContext);
 
   return (
-    <>
+    <main>
       <AddModal open={open} callFunction={() => setOpen(false)} />
       <Container>
         <IconButton
@@ -20,7 +20,7 @@ function ButtonAdd() {
           <Add fontSize="large" />
         </IconButton>
       </Container>
-    </>
+    </main>
   );
 }
 

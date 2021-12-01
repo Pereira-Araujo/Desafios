@@ -1,5 +1,5 @@
 import { ContainerFlex, Wallpaper } from "./styles";
-import SignIn from "./../../components/SignIn/SignIn";
+import SignIn from "../../components/SignIn/SignIn";
 
 // {
 // 	"email": "james@tip.com.br",
