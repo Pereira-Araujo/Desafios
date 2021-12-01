@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { lightGrey, lightGrey4 } from "../../../styles/colors";
 
 export const Container = styled.div`
+height:18rem;
+  width:14rem;
   margin: 2rem;
   background: white;
   box-shadow: 0 0 10px ${lightGrey4};
@@ -14,6 +16,7 @@ export const Container = styled.div`
 `;
 
 export const Post = styled.div`
+
   padding: 1rem;
 `;
 export const LightText = styled.p`

@@ -6,8 +6,9 @@ import ButtonChangeView from '../Buttons/ButtonChangeView/ButtonChangeView';
 
 const Header = ({ callFunction, searchValue }) => {
 	return (
-		<main>
-			<Container>
+<Container>
+			hola!!!
+			{/* 
 				<SubContainer>
 					<Title>Bem vindo a nossa plataforma</Title>
 
@@ -16,8 +17,7 @@ const Header = ({ callFunction, searchValue }) => {
 					<ButtonChangeView />
 				</SubContainer>
 				<img src={JamesIcon} alt={'icon'} />
-			</Container>
-		</main>
-	);
+			*/}
+</Container> 	);
 };
 export default Header;
