@@ -4,9 +4,9 @@ import GlobalStateContext from "../../global/GlobalStateContext";
 import { Container } from "./styles";
 import { useFilter } from "../../hooks/useFilter";
 
-import ContainerPost from "../../components/Posts/ContainerPost/ContainerPost"
+import ContainerPost from "../Posts/ContainerPost/ContainerPost"
 import Header from "../../components/Header/Header";
-import Table from '../../components/Table/Table'
+import Table from '../Table/Table'
 
 const Home = () => {
   useProtectedPage();
@@ -21,8 +21,9 @@ const Home = () => {
 
   return (
     <>
-      <Header callFunction={handleSearch} searchValue={find} />
+     
       <Container>
+      <Header  />
         {view === 'list' ? <Table data={filteredPosts} /> : <>{filteredPosts.length > 0 && <ContainerPost posts={filteredPosts} />}</>}
       </Container>
     </>

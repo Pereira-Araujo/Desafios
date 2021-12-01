@@ -3,7 +3,7 @@ import IconButton from "@mui/material/IconButton";
 import Add from "@mui/icons-material/AddCircleOutlineOutlined";
 import { Container } from "./styles";
 import GlobalStateContext from "../../../global/GlobalStateContext";
-import AddModal from "../../Modals/AddModal/AddModal";
+import AddModal from "../../../layout/Modals/AddModal/AddModal";
 
 function ButtonAdd() {
   const { open, setOpen } = useContext(GlobalStateContext);
