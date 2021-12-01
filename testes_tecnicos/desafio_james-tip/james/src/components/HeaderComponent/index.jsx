@@ -4,9 +4,9 @@ import { Container, Title, SubContainer } from './styles';
 import JamesIcon from '../../assets/james_icon.png';
 import ButtonChangeView from '../Buttons/ButtonChangeView/ButtonChangeView';
 
-const Header = ({ callFunction, searchValue }) => {
+const Menu = ({ callFunction, searchValue }) => {
 	return (
-<Container>
+		<Container>
 			hola!!!
 			{/* 
 				<SubContainer>
@@ -18,6 +18,7 @@ const Header = ({ callFunction, searchValue }) => {
 				</SubContainer>
 				<img src={JamesIcon} alt={'icon'} />
 			*/}
-</Container> 	);
+		</Container>
+	);
 };
-export default Header;
+export default Menu;

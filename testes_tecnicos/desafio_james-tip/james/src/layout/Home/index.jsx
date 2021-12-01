@@ -5,7 +5,7 @@ import { Container } from "./styles";
 import { useFilter } from "../../hooks/useFilter";
 
 import ContainerPost from "../Posts/ContainerPost/ContainerPost"
-import Header from "../../components/Header/Header";
+import Menu from "../../components/Menu";
 import Table from '../Table/Table'
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
     <>
      
       <Container>
-      <Header  />
+      <Menu  />
         {view === 'list' ? <Table data={filteredPosts} /> : <>{filteredPosts.length > 0 && <ContainerPost posts={filteredPosts} />}</>}
       </Container>
     </>
