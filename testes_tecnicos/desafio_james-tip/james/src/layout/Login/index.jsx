@@ -1,5 +1,5 @@
 import { ContainerFlex, Wallpaper } from "./styles";
-import SignIn from "../../components/SignIn/SignIn";
+import SignIn from "../../components/SignInComponent";
 
 // {
 // 	"email": "james@tip.com.br",
@@ -10,7 +10,7 @@ const Login = () => {
   return (
     <ContainerFlex>
       <Wallpaper></Wallpaper>
-      <SignIn
+      <SignInComponent
         title={"Bem Vindo !"}
         labelFirst={"Email"}
         labelSecond={"Password"}

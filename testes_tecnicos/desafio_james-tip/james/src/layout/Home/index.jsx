@@ -5,7 +5,7 @@ import { Container } from "./styles";
 import { useFilter } from "../../hooks/useFilter";
 
 import ContainerPost from "../Posts/ContainerPost/ContainerPost"
-import Menu from "../../components/Menu";
+import Menu from "../../components/MenuComponent";
 import Table from '../Table/Table'
 
 const Home = () => {

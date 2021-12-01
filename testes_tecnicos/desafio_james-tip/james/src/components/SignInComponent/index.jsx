@@ -4,7 +4,7 @@ import JamesIcon from '../../assets/james_icon.png';
 import { FormContainer, LoginButton, BorderIcon } from './styles';
 import { authentication } from '../../services/authentication';
 import GlobalStateContext from '../../global/GlobalStateContext';
-import InputComponent from './../InputComponent/InputComponent';
+import InputComponent from '../InputComponent';
 
 const SignIn = ({ buttonName, title }) => {
 	const history = useNavigate();

@@ -1,8 +1,8 @@
-import ButtonAdd from '../Buttons/ButtonAdd/ButtonAdd';
-import Search from './../Search/Search';
+import ButtonAdd from '../ButtonsComponent/ButtonAddComponent';
+import Search from './../SearchComponent';
 import { Container, Title, SubContainer } from './styles';
 import JamesIcon from '../../assets/james_icon.png';
-import ButtonChangeView from '../Buttons/ButtonChangeView/ButtonChangeView';
+import ButtonChangeView from '../ButtonsComponent/ButtonChangeViewComponent';
 
 const Menu = ({ callFunction, searchValue }) => {
 	return (
