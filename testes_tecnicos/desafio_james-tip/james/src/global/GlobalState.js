@@ -4,31 +4,32 @@ import GlobalStateContext from './GlobalStateContext';
 import { Base_Url } from '../constants/links';
 
 const GlobalState = (props) => {
-	const [ email, setEmail ] = useState('');
-	const [ password, setPassword ] = useState('');
 	const [ product, setProduct ] = useState([]);
 	const [ find, setFind ] = useState('');
 	const [ open, setOpen ] = useState(false);
-
-	const [formData,setFormData] = useState({
-		code:'',
-		category:'',
-		productName:'',
-		provider:'',
-		cost:''
-
-	})
-	
-
-	const [ upCode, setUpCode ] = useState('');
-	const [ upCategory, setUpCategory ] = useState('');
-	const [ upName, setUpName ] = useState('');
-	const [ upProvider, setUpProvider ] = useState('');
-	const [ upCost, setUpCost ] = useState('');
-
 	const [ idCode, setIdCode ] = useState('');
-
 	const [ view, setView ] = useState('card');
+
+	const [ login, setLogin ] = useState({
+		email: '',
+		password: ''
+	});
+
+	const [ formData, setFormData ] = useState({
+		code: '',
+		category: '',
+		productName: '',
+		provider: '',
+		cost: ''
+	});
+
+	const [ editFormData, setEditFormData ] = useState({
+		code: '',
+		category: '',
+		productName: '',
+		provider: '',
+		cost: ''
+	});
 
 	const getProducts = () => {
 		axios
@@ -45,10 +46,8 @@ const GlobalState = (props) => {
 	useEffect(() => getProducts(), []);
 
 	const data = {
-		email,
-		setEmail,
-		password,
-		setPassword,
+		login,
+		setLogin,
 		product,
 		find,
 		setFind,
@@ -56,17 +55,8 @@ const GlobalState = (props) => {
 		setOpen,
 		formData,
 		setFormData,
-
-		upCode,
-		setUpCode,
-		upCategory,
-		setUpCategory,
-		upName,
-		setUpName,
-		upProvider,
-		setUpProvider,
-		upCost,
-		setUpCost,
+		editFormData,
+		setEditFormData,
 
 		idCode,
 		setIdCode,
