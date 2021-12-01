@@ -5,7 +5,7 @@ import GlobalStateContext from '../../../global/GlobalStateContext';
 import PostCard from '../../Posts/PostCard/PostCard';
 import { Base_Url } from '../../../constants/links/index';
 import EditModal from '../../Modals/EditModal/EditModal';
-import { Actions, Container } from './styles';
+import {Container } from './styles';
 
 export const ContainerPost = ({ posts }) => {
 	const { idCode, setIdCode } = useContext(GlobalStateContext);

@@ -1,24 +1,18 @@
-import ButtonAdd from '../Buttons/ButtonAdd/ButtonAdd';
-import Search from './../Search/Search';
-import { Container, Title, SubContainer } from './styles';
-import JamesIcon from '../../assets/james_icon.png';
-import ButtonChangeView from '../Buttons/ButtonChangeView/ButtonChangeView';
+import SearchComponent from './../SearchComponent';
+import { Container } from './styles';
 
-const Menu = ({ callFunction, searchValue }) => {
+const HeaderComponent = ({ title, content, callFunction, searchValue }) => {
 	return (
 		<Container>
-			hola!!!
-			{/* 
-				<SubContainer>
-					<Title>Bem vindo a nossa plataforma</Title>
+			<h1>{title}</h1>
+			<p>{content}</p>
 
-					<Search callFunction={callFunction} searchValue={searchValue} />
-					<ButtonAdd />
-					<ButtonChangeView />
-				</SubContainer>
-				<img src={JamesIcon} alt={'icon'} />
-			*/}
+			<section>
+				<article>
+					<SearchComponent callFunction={callFunction} searchValue={searchValue} />
+				</article>
+			</section>
 		</Container>
 	);
 };
-export default Menu;
+export default HeaderComponent;

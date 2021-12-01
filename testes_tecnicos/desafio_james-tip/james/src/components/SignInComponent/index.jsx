@@ -6,7 +6,7 @@ import { authentication } from '../../services/authentication';
 import GlobalStateContext from '../../global/GlobalStateContext';
 import InputComponent from '../InputComponent';
 
-const SignIn = ({ buttonName, title }) => {
+const SignInComponent = ({ buttonName, title }) => {
 	const history = useNavigate();
 
 	const { login, setLogin } = useContext(GlobalStateContext);
@@ -48,4 +48,4 @@ const SignIn = ({ buttonName, title }) => {
 		</FormContainer>
 	);
 };
-export default SignIn;
+export default SignInComponent;

@@ -1,8 +1,9 @@
 import { useContext } from 'react';
+import GlobalStateContext from "../../../global/GlobalStateContext";
+
 import ViewListIcon from '@mui/icons-material/ViewList';
 import ViewModuleIcon from '@mui/icons-material/ViewModule';
 import IconButton from "@mui/material/IconButton";
-import GlobalStateContext from "../../../global/GlobalStateContext";
 
 export default function ButtonChangeView() {
     const {setView } = useContext(GlobalStateContext);
