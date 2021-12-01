@@ -44,7 +44,7 @@ const EditForm = () => {
     };
 
     axios
-      .put(`${Base_Url}${id}`, body)
+      .patch(`${Base_Url}${id}`, body)
       .then((resp) => {
         alert("Sucesso");
         window.location.reload(1);

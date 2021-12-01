@@ -40,11 +40,11 @@ export const ContainerPost = ({ posts }) => {
             callRemove={() => removeProduct(post.id)}
             callEdit={() => openModal(post.id)}
             key={post.id}
-            name={post.product_name}
-            code={post.product_code}
-            category={post.product_category}
-            provider={post.product_provider}
-            cost={post.product_cost}
+            name={post.product_name.toUpperCase()}
+            code={post.product_code.toUpperCase()}
+            category={post.product_category.toUpperCase()}
+            provider={post.product_provider.toUpperCase()}
+            cost={post.product_cost.toUpperCase()}
           />
         );
       })}

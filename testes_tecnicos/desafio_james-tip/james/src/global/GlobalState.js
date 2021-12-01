@@ -10,11 +10,15 @@ const GlobalState = (props) => {
 	const [ find, setFind ] = useState('');
 	const [ open, setOpen ] = useState(false);
 
-	const [ code, setCode ] = useState('');
-	const [ category, setCategory ] = useState('');
-	const [ name, setName ] = useState('');
-	const [ provider, setProvider ] = useState('');
-	const [ cost, setCost ] = useState('');
+	const [formData,setFormData] = useState({
+		code:'',
+		category:'',
+		productName:'',
+		provider:'',
+		cost:''
+
+	})
+	
 
 	const [ upCode, setUpCode ] = useState('');
 	const [ upCategory, setUpCategory ] = useState('');
@@ -50,16 +54,8 @@ const GlobalState = (props) => {
 		setFind,
 		open,
 		setOpen,
-		code,
-		setCode,
-		category,
-		setCategory,
-		name,
-		setName,
-		provider,
-		setProvider,
-		cost,
-		setCost,
+		formData,
+		setFormData,
 
 		upCode,
 		setUpCode,

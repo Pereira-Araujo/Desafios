@@ -9,7 +9,6 @@ import {
   Actions,
 } from "./styles";
 import NumberFormat from "react-number-format";
-import { upperCase } from "../../../services/upperCase";
 
 const PostCard = ({
   key,
@@ -29,9 +28,10 @@ const PostCard = ({
       </Actions>
       <Post>
         <LightTextMargin>Cód.: {code}</LightTextMargin>
-        <h3>{upperCase(name)}</h3>
-        <LightText>Categoria: {upperCase(category)}</LightText>
-        <LightText>Produtor: {upperCase(provider)}</LightText>
+        <h3>{name}</h3>
+        <LightText>Categoria: {category}</LightText>
+        <LightText>Produtor: {provider}</LightText>
+        
         <Price>
           <NumberFormat
             value={cost}

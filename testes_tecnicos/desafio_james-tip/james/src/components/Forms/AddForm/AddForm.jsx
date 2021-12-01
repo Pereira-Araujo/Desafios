@@ -1,89 +1,66 @@
-import { useContext } from "react";
-import Button from "@mui/material/Button";
-import { Container, Input } from "./styles";
-import GlobalStateContext from "../../../global/GlobalStateContext";
-import axios from "axios";
-import { Base_Url } from "../../../constants/links/index";
-
+import { useContext } from 'react';
+import Button from '@mui/material/Button';
+import { Container, Input } from './styles';
+import GlobalStateContext from '../../../global/GlobalStateContext';
+import { addProduct } from '../../../services/endpoints';
 const AddForm = () => {
-  const {
-    code,
-    setCode,
-    category,
-    setCategory,
-    name,
-    setName,
-    provider,
-    setProvider,
-    cost,
-    setCost,
-    
-  } = useContext(GlobalStateContext);
+	const { formData, setFormData } = useContext(GlobalStateContext);
 
+	const newProduct = () => {
+		const body = {
+			product_code: formData.code,
+			product_category: formData.category,
+			product_name: formData.productName,
+			product_provider: formData.provider,
+			product_cost: formData.cost
+		};
+		return addProduct(body);
+	};
 
-  const addProduct = () => {
-    const body = {
-      product_code: code,
-      product_category: category,
-      product_name: name,
-      product_provider: provider,
-      product_cost: cost,
-    };
-    axios
-      .post(`${Base_Url}`, body)
-      .then((resp) => {
-        alert("Sucesso");
-        window.location.reload(1)
-      })
-      .catch((error) => {
-        alert("Algo deu errado :(");
-      });
-  };
+	return (
+		<Container>
+			<h1>Novo Produto</h1>
+			<Input
+				required
+				label="Código"
+				variant="outlined"
+				value={formData.code}
+				onChange={(e) => setFormData({ ...formData, code: e.target.value })}
+			/>
+			<Input
+				required
+				label="Categoria "
+				variant="outlined"
+				value={formData.category}
+				onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+			/>
+			<Input
+				required
+				label="Nome "
+				variant="outlined"
+				value={formData.productName}
+				onChange={(e) => setFormData({ ...formData, productName: e.target.value })}
+			/>
+			<Input
+				required
+				label="Fornecedor"
+				variant="outlined"
+				value={formData.provider}
+				onChange={(e) => setFormData({ ...formData, provider: e.target.value })}
+			/>
+			<Input
+				required
+				label="Valor "
+				variant="outlined"
+				value={formData.cost}
+				onChange={(e) => setFormData({ ...formData, cost: e.target.value })}
+			/>
 
-  return (
-    <Container>
-      <h1>Novo Produto</h1>
-      <Input
-        required
-        label="Código"
-        variant="outlined"
-        value={code}
-        onChange={(e) => setCode(e.target.value)}
-      />
-      <Input
-        required
-        label="Categoria "
-        variant="outlined"
-        value={category}
-        onChange={(e) => setCategory(e.target.value)}
-      />
-      <Input
-        required
-        label="Nome "
-        variant="outlined"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <Input
-        required
-        label="Fornecedor"
-        variant="outlined"
-        value={provider}
-        onChange={(e) => setProvider(e.target.value)}
-      />
-      <Input
-        required
-        label="Valor "
-        variant="outlined"
-        value={cost}
-        onChange={(e) => setCost(e.target.value)}
-      />
-
-      <Button variant="contained" onClick={addProduct}>
-        Adicionar
-      </Button>
-    </Container>
-  );
+			<Button variant="contained" onClick={newProduct}>
+				Adicionar
+			</Button>
+		</Container>
+	);
 };
 
 export default AddForm;
