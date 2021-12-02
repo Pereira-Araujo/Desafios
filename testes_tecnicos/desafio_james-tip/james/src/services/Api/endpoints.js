@@ -14,6 +14,12 @@ export const getProducts = (set) => {
 
 };
 
+export const getProductName = (id,obj) => {
+    const objProduct = obj.filter((item) => item.id === id);
+    return objProduct[0]?.product_name
+  };
+
+
 export const postProduct = (obj) => {
 	return axios
 		.post(`${Base_Url}`, obj)
