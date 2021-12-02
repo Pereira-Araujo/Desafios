@@ -1,16 +1,18 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const Container = styled.main`
-display:flex;
+	display: flex;
+	height: 100vh;
+	overflow-y: hidden;
+
+	div {
+		overflow-y: auto;
+		overflow-x:hidden;
+	}
 `;
 
 export const HomePosts = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap:30px;
-
-  @media (max-width: 450px) {
-    gap:0;
-  }
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 `;

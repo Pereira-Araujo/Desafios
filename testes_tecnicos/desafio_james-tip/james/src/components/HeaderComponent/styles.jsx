@@ -16,9 +16,10 @@ export const Container = styled.main`
 		margin-top: 0.5rem;
 		background: blue;
 		min-height: 8rem;
-		width: 71vw;
+		width: 70vw;
 		border-radius: 16px;
 		background: ${lightDefault};
+		margin-right:8px;
 
 		display: flex;
 		align-items: center;
