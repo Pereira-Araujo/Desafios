@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { darkDefault, lightGrey } from '../../styles/colors';
+import { colorDefault, lightGrey } from '../../styles/colors';
 
 export const SearchInput = styled.input`
 	height: 1.5rem;
@@ -8,7 +8,7 @@ export const SearchInput = styled.input`
 	border: ${lightGrey} 1px solid;
 	padding: 4px;
 	border-radius: 6px;
-	color: ${darkDefault};
+	color: ${colorDefault};
 
 	font-family: "Nunito", sans-serif;
 	font-weight: 600;

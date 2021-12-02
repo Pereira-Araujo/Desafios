@@ -1,31 +1,29 @@
 import axios from 'axios';
 import { Base_Url } from '../../constants/links/index';
 
-
 export const getProducts = (set) => {
 	axios
 		.get(`${Base_Url}`)
 		.then((resp) => {
-			set(resp.data)
+			set(resp.data);
 		})
 		.catch((error) => {
 			console.log(error);
 		});
-
 };
 
-export const getProductName = (id,obj) => {
-    const objProduct = obj.filter((item) => item.id === id);
-    return objProduct[0]?.product_name
-  };
-
+export const getProductName = (id, obj) => {
+	let objProduct = obj.filter((item) => item.id === id);
+	
+	return objProduct[0].product_name;
+};
 
 export const postProduct = (obj) => {
 	return axios
 		.post(`${Base_Url}`, obj)
 		.then((resp) => {
 			alert('Sucesso');
-			window.location.reload(1);
+			window.location.reload(false);
 		})
 		.catch((error) => {
 			alert('Algo deu errado :(');
@@ -37,7 +35,7 @@ export const patchProduct = (id, obj) => {
 		.patch(`${Base_Url}${id}`, obj)
 		.then((resp) => {
 			alert('Sucesso');
-			window.location.reload(1);
+			window.location.reload(false);
 		})
 		.catch((error) => {
 			alert('Algo deu errado :(');
@@ -45,14 +43,14 @@ export const patchProduct = (id, obj) => {
 };
 
 export const delProduct = (id) => {
-	axios
-		.delete(`${Base_Url}${id}`)
-		.then((resp) => {
-			alert('Produto excluido com sucesso!');
-			window.location.reload(1);
-		})
-		.catch((error) => {
-			alert('algo errado');
-		});
+	if (window.confirm('Certeza?')) {
+		axios
+			.delete(`${Base_Url}${id}`)
+			.then((resp) => {
+				window.location.reload(false);
+			})
+			.catch((error) => {
+				alert('algo errado');
+			});
+	}
 };
-

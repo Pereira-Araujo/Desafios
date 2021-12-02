@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import Add from '@mui/icons-material/AddCircleOutlineOutlined';
 
-export const Container = styled.div`
-	margin-left: 1rem;
-	font-size: 20px;
-`;
+
+export const ButtonIcon = styled(Add)`
+color:white;
+`

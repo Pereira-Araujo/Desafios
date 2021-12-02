@@ -26,7 +26,7 @@ export const ContainerPost = ({ posts }) => {
 						<PostCard
 							callRemove={() => removeProduct(post.id)}
 							callEdit={() => openModal(post.id)}
-							key={post.id}
+							thisKey={post.id}
 							name={post.product_name.toUpperCase()}
 							code={post.product_code.toUpperCase()}
 							category={post.product_category.toUpperCase()}
