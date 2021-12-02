@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { Base_Url } from '../../constants/links/index';
 
+
 export const getProducts = (set) => {
 	axios
 		.get(`${Base_Url}`)
