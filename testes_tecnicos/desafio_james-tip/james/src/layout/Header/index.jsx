@@ -1,7 +1,7 @@
-import SearchComponent from './../SearchComponent';
+import SearchComponent from '../../components/SearchComponent';
 import { Container } from './styles';
 
-const HeaderComponent = ({ title, content, callFunction, searchValue }) => {
+const Header = ({ title, content, callFunction, searchValue }) => {
 	return (
 		<Container>
 			<h1>{title}</h1>
@@ -15,4 +15,4 @@ const HeaderComponent = ({ title, content, callFunction, searchValue }) => {
 		</Container>
 	);
 };
-export default HeaderComponent;
+export default Header;

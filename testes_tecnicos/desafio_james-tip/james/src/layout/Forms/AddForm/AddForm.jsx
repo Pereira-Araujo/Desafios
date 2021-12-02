@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import Button from '@mui/material/Button';
 import { Container, Input } from './styles';
 import GlobalStateContext from '../../../global/GlobalStateContext';
-import { postProduct } from '../../../Api/services/endpoints';
+import { postProduct } from "../../../services/Api/endpoints"
 const AddForm = () => {
 	const { formData, setFormData } = useContext(GlobalStateContext);
 

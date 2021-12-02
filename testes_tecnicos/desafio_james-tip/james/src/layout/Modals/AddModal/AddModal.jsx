@@ -12,6 +12,7 @@ const style = {
   height: 400,
   bgcolor: "background.paper",
   border: `2px solid ${lightGrey3}`,
+  borderRadius:"4%",
   boxShadow: 24,
   p: 4,
   "@media (max-width:450px)": {

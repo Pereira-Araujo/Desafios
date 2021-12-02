@@ -6,8 +6,12 @@ export const Container = styled.main`
 	overflow-y: hidden;
 
 	div {
-		overflow-y: auto;
-		overflow-x:hidden;
+		overflow: scroll;
+		overflow-x: hidden;
+		::-webkit-scrollbar {
+			width: 0;
+			background: transparent;
+		}
 	}
 `;
 

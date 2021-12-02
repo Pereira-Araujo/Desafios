@@ -3,15 +3,17 @@ import useProtectedPage from '../../hooks/useProtectedPage';
 import GlobalStateContext from '../../global/GlobalStateContext';
 import { HomePosts, Container } from './styles';
 import { useFilter } from '../../hooks/useFilter';
+import { removeId } from '../../services/removeId';
+
 
 import ContainerPost from '../Posts/ContainerPost/ContainerPost';
-import Menu from '../../components/MenuComponent';
+import Menu from '../Menu';
 import Table from '../Table/Table';
-import HeaderComponent from './../../components/HeaderComponent/index';
+import Header from '../Header';
 
 const Home = () => {
 	useProtectedPage();
-	const { product, find, setFind, view } = useContext(GlobalStateContext);
+	const { product,productTable,find, setFind, view } = useContext(GlobalStateContext);
 
 	const handleSearch = (e) => {
 		const { value } = e.target;
@@ -24,7 +26,7 @@ const Home = () => {
 		<Container>
 			<Menu />
 			<div>
-				<HeaderComponent
+				<Header
 					title={'Bem vindo !'}
 					content={'Pesquise pelo código, nome , categoria ou valor'}
 					callFunction={handleSearch}

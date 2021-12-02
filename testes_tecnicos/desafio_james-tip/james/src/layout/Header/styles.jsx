@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { darkDefault, lightDefault } from '../../styles/colors';
+import { colorDefault, lightDefault } from '../../styles/colors';
 
 export const Container = styled.main`
 	height: 10rem;
 	width: 74vw;
 	padding: 1.6rem;
 	padding-top: 3rem;
-	color: ${darkDefault};
+	color: ${colorDefault};
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;

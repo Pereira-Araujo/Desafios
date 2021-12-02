@@ -1,14 +1,15 @@
-import RemoveIcon from '@mui/icons-material/CancelRounded';
+import RemoveIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import EditIcon from '@mui/icons-material/EditRounded';
 import { Container } from './styles';
 import NumberFormat from 'react-number-format';
 
-const PostCard = ({ key, name, code, category, provider, cost, callRemove, callEdit }) => {
+const PostCard = ({ thisKey, name, code, category, provider, cost, callRemove, callEdit }) => {
 	return (
-		<Container key={key}>
+		<Container key={thisKey}>
 			<figure>
+			<EditIcon onClick={callEdit} color="primary" />
 				<RemoveIcon onClick={callRemove} color="error" />
-				<EditIcon onClick={callEdit} color="primary" />
+				
 			</figure>
 			<section>
 				<div>
