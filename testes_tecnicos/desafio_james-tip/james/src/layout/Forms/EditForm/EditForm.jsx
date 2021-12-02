@@ -4,7 +4,7 @@ import GlobalStateContext from "../../../global/GlobalStateContext";
 import Button from "@mui/material/Button";
 import { Container, Input } from "./styles";
 
-import { editProduct } from "../../../services/endpoints";
+import { patchProduct } from "../../../services/Api/endpoints";
 
 const EditForm = () => {
   const {
@@ -21,7 +21,7 @@ const EditForm = () => {
   };
 
 
-  const productEdit = (id)=>{
+  const editProduct = (id)=>{
     const body = {
 			product_code: editFormData.code,
 			product_category: editFormData.category,
@@ -30,7 +30,7 @@ const EditForm = () => {
 			product_cost: editFormData.cost
 		};
 
-  return editProduct(id,body)
+  return patchProduct(id,body)
 
   }
 
@@ -77,7 +77,7 @@ const EditForm = () => {
         onChange={(e) => setEditFormData({...editFormData,cost: e.target.value})}
       />
 
-      <Button variant="contained" onClick={() => productEdit(idCode)}>
+      <Button variant="contained" onClick={() => editProduct(idCode)}>
         Editar
       </Button>
     </Container>

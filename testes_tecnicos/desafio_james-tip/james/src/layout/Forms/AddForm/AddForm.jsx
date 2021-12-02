@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import Button from '@mui/material/Button';
 import { Container, Input } from './styles';
 import GlobalStateContext from '../../../global/GlobalStateContext';
-import { addProduct } from '../../../services/endpoints';
+import { postProduct } from '../../../Api/services/endpoints';
 const AddForm = () => {
 	const { formData, setFormData } = useContext(GlobalStateContext);
 
@@ -14,7 +14,7 @@ const AddForm = () => {
 			product_provider: formData.provider,
 			product_cost: formData.cost
 		};
-		return addProduct(body);
+		return postProduct(body);
 	};
 
 	return (

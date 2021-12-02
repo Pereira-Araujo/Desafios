@@ -1,26 +1,17 @@
-import axios from 'axios';
 
 import { useContext, useState } from 'react';
 import GlobalStateContext from '../../../global/GlobalStateContext';
 import PostCard from '../../Posts/PostCard/PostCard';
-import { Base_Url } from '../../../constants/links/index';
 import EditModal from '../../Modals/EditModal/EditModal';
 import {Container } from './styles';
+import { delProduct } from '../../../services/Api/endpoints';
 
 export const ContainerPost = ({ posts }) => {
 	const { idCode, setIdCode } = useContext(GlobalStateContext);
 	const [ open, setOpen ] = useState(false);
 
 	const removeProduct = (id) => {
-		axios
-			.delete(`${Base_Url}${id}`)
-			.then((resp) => {
-				alert('Produto excluido com sucesso!');
-				window.location.reload(1);
-			})
-			.catch((error) => {
-				alert('algo errado');
-			});
+		return delProduct(id)
 	};
 
 	const openModal = (id) => {

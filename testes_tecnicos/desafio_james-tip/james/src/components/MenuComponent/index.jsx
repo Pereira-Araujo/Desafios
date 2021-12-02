@@ -1,8 +1,8 @@
 
-import { Container, Title, SubContainer } from './styles';
+import { Container } from './styles';
 
 
-const Menu = ({ callFunction, searchValue }) => {
+const Menu = () => {
 	return (
 		<Container>
 			
