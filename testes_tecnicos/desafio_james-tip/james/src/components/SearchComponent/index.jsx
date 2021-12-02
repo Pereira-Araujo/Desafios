@@ -2,15 +2,15 @@ import "./styles";
 
 import { SearchInput } from "./styles";
 
-const Search = ({ callFunction, searchValue }) => {
+const SearchComponent = ({ callFunction, searchValue }) => {
   return (
-    <>
+    <main>
       <SearchInput
         onChange={callFunction}
         value={searchValue}
-        placeholder={"Pesquisar código, nome, tipo, produtor ou valor..."}
+        placeholder={'Pesquisar'}
       />
-    </>
+    </main>
   );
 };
-export default Search;
+export default SearchComponent;

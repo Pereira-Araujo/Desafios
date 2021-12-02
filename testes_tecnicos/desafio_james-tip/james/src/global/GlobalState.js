@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import GlobalStateContext from './GlobalStateContext';
-import { Base_Url } from '../constants/links';
+import { getProducts } from './../services/Api/endpoints';
 
 const GlobalState = (props) => {
 	const [ product, setProduct ] = useState([]);
@@ -31,19 +30,11 @@ const GlobalState = (props) => {
 		cost: ''
 	});
 
-	const getProducts = () => {
-		axios
-			.get(`${Base_Url}`)
-			.then((resp) => {
-				setProduct(resp.data);
-				console.log(resp.data);
-			})
-			.catch((error) => {
-				console.log(error);
-			});
+	const showProducts = () => {
+		return getProducts(setProduct);
 	};
 
-	useEffect(() => getProducts(), []);
+	useEffect(() => showProducts(), []);
 
 	const data = {
 		login,

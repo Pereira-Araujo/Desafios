@@ -4,7 +4,7 @@ import GlobalStateContext from "../../../global/GlobalStateContext";
 import Button from "@mui/material/Button";
 import { Container, Input } from "./styles";
 
-import { editProduct } from "../../../services/endpoints";
+import { getProductName, patchProduct } from "../../../services/Api/endpoints";
 
 const EditForm = () => {
   const {
@@ -15,22 +15,21 @@ const EditForm = () => {
 
   const [productName, setProductName] = useState("");
 
-  const getName = (id) => {
+  const getName = (id) =>setProductName(getProductName(id,product))
+  
+
+  const editProduct = (id)=>{
     const objProduct = product.filter((item) => item.id === id);
-    setProductName(objProduct[0]?.product_name);
-  };
 
-
-  const productEdit = (id)=>{
     const body = {
-			product_code: editFormData.code,
-			product_category: editFormData.category,
-			product_name: editFormData.productName,
-			product_provider: editFormData.provider,
-			product_cost: editFormData.cost
+			product_code: editFormData.code.length > 0 ? editFormData.code : objProduct[0]?.product_code,
+			product_category: editFormData.category.length> 0 ? editFormData.category : objProduct[0]?.product_category,
+			product_name: editFormData.productName.length > 0 ?editFormData.productName : objProduct[0]?.product_name,
+			product_provider: editFormData.provider.length >0 ? editFormData.provider: objProduct[0]?.product_provider,
+			product_cost: editFormData.cost.length > 0 ? editFormData.cost: objProduct[0]?.product_cost
 		};
 
-  return editProduct(id,body)
+  return patchProduct(id,body)
 
   }
 
@@ -77,7 +76,7 @@ const EditForm = () => {
         onChange={(e) => setEditFormData({...editFormData,cost: e.target.value})}
       />
 
-      <Button variant="contained" onClick={() => productEdit(idCode)}>
+      <Button variant="contained" onClick={() => editProduct(idCode)}>
         Editar
       </Button>
     </Container>

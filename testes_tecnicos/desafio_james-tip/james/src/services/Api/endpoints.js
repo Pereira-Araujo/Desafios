@@ -1,7 +1,26 @@
 import axios from 'axios';
-import { Base_Url } from './../constants/links/index';
+import { Base_Url } from '../../constants/links/index';
 
-export const addProduct = (obj) => {
+
+export const getProducts = (set) => {
+	axios
+		.get(`${Base_Url}`)
+		.then((resp) => {
+			set(resp.data)
+		})
+		.catch((error) => {
+			console.log(error);
+		});
+
+};
+
+export const getProductName = (id,obj) => {
+    const objProduct = obj.filter((item) => item.id === id);
+    return objProduct[0]?.product_name
+  };
+
+
+export const postProduct = (obj) => {
 	return axios
 		.post(`${Base_Url}`, obj)
 		.then((resp) => {
@@ -13,7 +32,7 @@ export const addProduct = (obj) => {
 		});
 };
 
-export const editProduct = (id, obj) => {
+export const patchProduct = (id, obj) => {
 	axios
 		.patch(`${Base_Url}${id}`, obj)
 		.then((resp) => {
@@ -25,7 +44,7 @@ export const editProduct = (id, obj) => {
 		});
 };
 
-export const removeProduct = (id) => {
+export const delProduct = (id) => {
 	axios
 		.delete(`${Base_Url}${id}`)
 		.then((resp) => {
@@ -36,3 +55,4 @@ export const removeProduct = (id) => {
 			alert('algo errado');
 		});
 };
+

@@ -1,24 +1,19 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import GlobalStateContext from '../../global/GlobalStateContext';
+
+import { userLogin } from '../../services/authentication';
+import InputComponent from '../InputComponent';
 import JamesIcon from '../../assets/james_icon.png';
 import { FormContainer, LoginButton, BorderIcon } from './styles';
-import { authentication } from '../../services/authentication';
-import GlobalStateContext from '../../global/GlobalStateContext';
-import InputComponent from './../InputComponent/InputComponent';
 
-const SignIn = ({ buttonName, title }) => {
+const SignInComponent = ({ buttonName, title }) => {
 	const history = useNavigate();
 
 	const { login, setLogin } = useContext(GlobalStateContext);
 
 	const send = (event) => {
-		const body = {
-			email: login.email,
-			password: login.password
-		};
-
-		authentication(body, history);
-		event.preventDefault();
+		return userLogin(event, history, login);
 	};
 
 	return (
@@ -48,4 +43,4 @@ const SignIn = ({ buttonName, title }) => {
 		</FormContainer>
 	);
 };
-export default SignIn;
+export default SignInComponent;

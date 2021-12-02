@@ -13,3 +13,13 @@ export const authentication = (data, navigate) => {
       alert("algo inesperado ocorreu");
     });
 };
+
+export const userLogin = (event,history,state) => {
+	const body = {
+		email: state.email,
+		password: state.password
+	};
+
+	authentication(body, history);
+	event.preventDefault();
+};
