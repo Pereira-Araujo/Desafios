@@ -2,6 +2,8 @@
 # James Tip
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Pereira-Araujo/users-api/blob/main/LICENSE.md)
 
+:construction: Como não passei no teste, estou fazendo algumas alterações no código :stuck_out_tongue:	
+
 ![2](https://user-images.githubusercontent.com/60116988/144677981-ad6964d6-ac92-44f0-820d-fe2d18b30abc.png)
 
 <details>
