@@ -4,6 +4,12 @@
 
 ![2](https://user-images.githubusercontent.com/60116988/144677981-ad6964d6-ac92-44f0-820d-fe2d18b30abc.png)
 
+<details>
+<summary>Mais imagens</summary>
+  
+![Captura de tela 2021-12-03 190314](https://user-images.githubusercontent.com/60116988/144678749-79359201-d6c8-4d36-921b-b0f7608f2004.png)
+  
+</details>
 
 ## Deploy : 
 - **Link abaixo:**
@@ -28,6 +34,7 @@ Criar app com CRUD básico para produtos.
 - [x] Possibilidade de escolha de visualização dos produtos (tabela ou cards)
 - [ ] Edição das fontes de texto
 - [ ] Mudança para um menu mais amigável
+- [ ] Mudança para modais mais amigáveis
 - [ ] Responsividade
 
 
