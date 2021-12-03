@@ -1,13 +1,11 @@
-import { useContext } from 'react';
-import GlobalStateContext from '../../../global/GlobalStateContext';
+import { useState } from 'react';
+
 import AddModal from '../../../layout/Modals/AddModal/AddModal';
-
 import IconButton from '@mui/material/IconButton';
-
 import { ButtonIcon } from './styles';
 
 function ButtonAddComponent({ text }) {
-	const { open, setOpen } = useContext(GlobalStateContext);
+	const [open,setOpen] =useState(false)
 
 	return (
 		<main>

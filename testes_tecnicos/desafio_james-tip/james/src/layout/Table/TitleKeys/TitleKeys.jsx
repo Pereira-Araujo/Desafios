@@ -1,1 +1,1 @@
-export const keys = [ 'id','código', 'categoria', 'nome', 'provedor', 'custo', 'editar', 'apgar' ];
+export const keys = [ 'código', 'categoria', 'nome', 'provedor', 'custo', 'editar', 'apagar' ];

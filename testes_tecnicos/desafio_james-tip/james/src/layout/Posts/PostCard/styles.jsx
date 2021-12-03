@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import { lightGrey, white,mostLightGrey } from '../../../styles/colors';
+import { lightGrey, white, mostLightGrey, colorToGradient} from '../../../styles/colors';
 
 export const Container = styled.main`
+	color: ${colorToGradient};
 	height: 18rem;
 	width: 14rem;
 	margin: 14px;
@@ -9,7 +10,6 @@ export const Container = styled.main`
 	background: ${white};
 	box-shadow: 0 0 10px ${lightGrey};
 	transition: transform 100mx ease-in-out;
-	font-family: "Nunito", sans-serif;
 
 	&:hover {
 		transform: scale(1.05);
@@ -20,28 +20,46 @@ export const Container = styled.main`
 		display: flex;
 		justify-content: space-between;
 		cursor: pointer;
-		
+
 		:first-child :hover {
 			background: ${mostLightGrey};
 			border-radius: 100%;
-			
-
 		}
 	}
 
 	section {
+		height: 13rem;
 		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		h3 {
+			font-size: 19px;
+			font-weight: bolder;
+			letter-spacing: 0.5px;
+            cursor: pointer;
 
-		p {
-			color: ${lightGrey};
-		}
-		article {
-			margin-top: 1rem;
 		}
 		div {
+			height: 8rem;
 			p {
 				color: ${lightGrey};
-				margin-bottom: 4px;
+				margin-top: 0.5rem;
+			}
+			span {
+				font-weight: bolder;
+				letter-spacing: 1px;
+				color: ${colorToGradient};
+				opacity: 50%;
+			}
+		}
+
+		footer {
+			font-weight: bolder;
+			display: flex;
+			justify-content: space-between;
+			p {
+				cursor: pointer;
 			}
 		}
 	}

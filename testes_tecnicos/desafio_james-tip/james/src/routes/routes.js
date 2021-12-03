@@ -1,17 +1,17 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {  Routes, Route,HashRouter  } from "react-router-dom";
 import LoginPage from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
 import ErrorPage from "../pages/ErrorPage"
 
 const PagesPaths = () => {
   return (
-    <BrowserRouter>
+    <HashRouter >
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 export default PagesPaths;
