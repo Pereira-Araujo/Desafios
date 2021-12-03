@@ -4,11 +4,13 @@ import { getProducts } from './../services/Api/endpoints';
 
 const GlobalState = (props) => {
 	const [ product, setProduct ] = useState([]);
-	const [ productTable, setProductTable ] = useState([]);
+
 	const [ find, setFind ] = useState('');
-	const [ open, setOpen ] = useState(false);
 	const [ idCode, setIdCode ] = useState('');
 	const [ view, setView ] = useState('card');
+
+	const [ open, setOpen ] = useState(false);
+	const [ showAbout, setShowAbout ] = useState(false);
 
 	const [ login, setLogin ] = useState({
 		email: '',
@@ -35,21 +37,14 @@ const GlobalState = (props) => {
 		return getProducts(setProduct);
 	};
 
-	const showTableProducts = () => {
-		return getProducts(setProductTable)
-		
-	};
-
 	useEffect(() => {
 		showProducts();
-		showTableProducts()
-	}, [setProductTable]);
+	}, []);
 
 	const data = {
 		login,
 		setLogin,
 		product,
-		productTable,
 		find,
 		setFind,
 		open,
@@ -58,6 +53,8 @@ const GlobalState = (props) => {
 		setFormData,
 		editFormData,
 		setEditFormData,
+		showAbout,
+		setShowAbout,
 
 		idCode,
 		setIdCode,

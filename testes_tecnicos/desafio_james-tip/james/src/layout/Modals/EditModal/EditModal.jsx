@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import { lightGrey3 } from "../../../styles/colors";
+import { lightDefault } from "../../../styles/colors";
 import EditForm from "../../Forms/EditForm/EditForm";
 
 const style = {
@@ -11,7 +11,7 @@ const style = {
   width: 400,
   height: 400,
   bgcolor: "background.paper",
-  border: `2px solid ${lightGrey3}`,
+  border: `2px solid ${lightDefault}`,
   borderRadius:"2%",
 
   boxShadow: 24,

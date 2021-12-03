@@ -1,38 +1,40 @@
-import JamesIcon from '../../assets/james_icon.png';
+import { useContext } from 'react';
+import GlobalStateContext from '../../global/GlobalStateContext';
 
+import MeIcon from '../../assets/avatar.png';
+import JamesIcon from '../../assets/james_icon.png';
+import { changeText } from '../../services/changeText';
+import {exit} from '../../services/authentication'
 import { Container } from './styles';
-import ButtonAddComponent from '../../components/ButtonsComponent/ButtonAddComponent';
-import ButtonGridComponent from '../../components/ButtonsComponent/ButtonChangeViewComponent/ButtonGridComponent';
-import ButtonTableComponent from '../../components/ButtonsComponent/ButtonChangeViewComponent/ButtonTableComponent';
+
+import About from './About';
+import Options from './Options'
 
 const Menu = () => {
+	const { showAbout, setShowAbout } = useContext(GlobalStateContext);
+
 	return (
 		<Container>
-			
-				<figure>
+			<figure>
+				{showAbout ? (
+					<img className={'myAvatar'} src={MeIcon} alt={'me icon'} />
+				) : (
 					<img src={JamesIcon} alt={'james tip icon'} />
-					<h3>James Test</h3>
-				</figure>
+				)}
+				<h3>James Test</h3>
+			</figure>
 
-				<section>
-					<ul>
-						<li>
-							<ButtonAddComponent text="Novo" />
-						</li>
+			<section>
+				{showAbout ? (
+					<About />
+				) : (
+					<Options/>
+				)}
+			</section>
 
-						<li>
-							<ButtonGridComponent text="Cards" />
-						</li>
-
-						<li>
-							<ButtonTableComponent text="Lista" />
-						</li>
-					</ul>
-				</section>
-			
 			<footer>
-				<p>Sobre</p>
-				<p>Sair</p>
+				<p onClick={() => setShowAbout(!showAbout)}>{changeText(showAbout, 'Menu', 'Sobre')}</p>
+				<p onClick={exit}>Sair</p>
 			</footer>
 		</Container>
 	);

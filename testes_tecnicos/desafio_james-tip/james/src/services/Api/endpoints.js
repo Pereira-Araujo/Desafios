@@ -15,7 +15,7 @@ export const getProducts = (set) => {
 export const getProductName = (id, obj) => {
 	let objProduct = obj.filter((item) => item.id === id);
 	
-	return objProduct[0].product_name;
+	return objProduct[0].product_name
 };
 
 export const postProduct = (obj) => {

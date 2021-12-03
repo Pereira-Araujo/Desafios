@@ -1,5 +1,5 @@
 
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import GlobalStateContext from '../../../global/GlobalStateContext';
 import PostCard from '../../Posts/PostCard/PostCard';
 import EditModal from '../../Modals/EditModal/EditModal';
@@ -7,8 +7,7 @@ import {Container } from './styles';
 import { delProduct } from '../../../services/Api/endpoints';
 
 export const ContainerPost = ({ posts }) => {
-	const { idCode, setIdCode } = useContext(GlobalStateContext);
-	const [ open, setOpen ] = useState(false);
+	const {open, setOpen, idCode, setIdCode } = useContext(GlobalStateContext);
 
 	const removeProduct = (id) => {
 		return delProduct(id)

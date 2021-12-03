@@ -2,11 +2,15 @@ import RemoveIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import EditIcon from '@mui/icons-material/EditRounded';
 import { TextTable } from './styles';
 
-const Rows = ({ info,callEdit,callRemove }) => {
-	const name = Object.keys(info);
+const Rows = ({ info, callEdit, callRemove, id, code, category, name, provider, cost }) => {
+	// const name = Object.keys(info);
 	return (
 		<tr key={info}>
-			{name.map((key) => <TextTable key={key}>{info[key]} </TextTable>)}
+			<TextTable>{code} </TextTable>
+			<TextTable>{category} </TextTable>
+			<TextTable>{name} </TextTable>
+			<TextTable>{provider} </TextTable>
+			<TextTable>{cost} </TextTable>
 
 			<TextTable>
 				<EditIcon onClick={callEdit} color="primary" />

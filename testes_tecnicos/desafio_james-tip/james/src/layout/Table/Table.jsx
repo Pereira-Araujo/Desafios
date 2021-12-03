@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 
 import Header from './Header/Header';
 import Rows from './Rows/Rows';
@@ -10,9 +10,7 @@ import EditModal from '../Modals/EditModal/EditModal';
 import { delProduct } from '../../services/Api/endpoints';
 
 const Table = ({ data }) => {
-	const { idCode, setIdCode } = useContext(GlobalStateContext);
-	const [ open, setOpen ] = useState(false);
-
+	const { open, setOpen, idCode, setIdCode } = useContext(GlobalStateContext);
 	const removeProduct = (id) => {
 		return delProduct(id);
 	};
@@ -30,7 +28,12 @@ const Table = ({ data }) => {
 				<tbody>
 					{data.map((line) => (
 						<Rows
-							info={line}
+							info={line.id}
+							code={line.product_code}
+							category={line.product_category}
+							name={line.product_name}
+							provider={line.product_provider}
+							cost={line.product_cost}
 							callEdit={() => openModal(line.id)}
 							callRemove={() => removeProduct(line.id)}
 						/>
