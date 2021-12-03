@@ -7,7 +7,7 @@ const PostCard = ({ thisKey, name, code, category, provider, cost, callRemove, c
 	return (
 		<Container key={thisKey}>
 			<figure>
-			<EditIcon onClick={callEdit} color="primary" />
+			    <EditIcon onClick={callEdit} color="primary" />
 				<RemoveIcon onClick={callRemove} color="error" />
 				
 			</figure>
