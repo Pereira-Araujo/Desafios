@@ -7,7 +7,7 @@ export const Container = styled.main`
 	margin: 14px;
 	margin-left: 2rem;
 	background: white;
-	box-shadow: 0 0 10px ${lightGrey4};
+	box-shadow: 0 0 10px ${lightGrey};
 	transition: transform 100mx ease-in-out;
 	font-family: "Nunito", sans-serif;
 
