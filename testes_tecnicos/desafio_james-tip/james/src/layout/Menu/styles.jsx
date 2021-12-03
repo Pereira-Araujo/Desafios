@@ -4,8 +4,10 @@ import { colorToGradient, colorContrast } from '../../styles/colors';
 export const Container = styled.main`
 	background-image: ${colorContrast};
 	width: 16vw;
-	height: 98vh;
+	height: 92vh;
 	padding-top: 2rem;
+	border-radius:1%;
+	margin:1rem 0 0 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -41,7 +43,7 @@ export const Container = styled.main`
 	}
 
 	footer {
-		margin-top: 26rem;
+		margin-top: 22rem;
 		width: 10vw;
 		display: flex;
 		justify-content: space-between;
