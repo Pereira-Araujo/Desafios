@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import TextField from '@mui/material/TextField';
-import { colorContrast, colorToGradient } from '../../../styles/colors';
+import { colorContrast, colorToGradient } from '../../../../styles/colors';
 
 export const Container = styled.main`
 	display: flex;
@@ -41,7 +41,7 @@ export const FormColumns = styled.section`
 	}
 `;
 
-export const FormEnd = styled.section`
+export const FormStart = styled.section`
 	width: 400px;
 	display: flex;
 	align-items: flex-start;

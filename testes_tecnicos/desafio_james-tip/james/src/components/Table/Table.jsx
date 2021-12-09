@@ -2,7 +2,6 @@ import { useContext } from 'react';
 
 import Header from './Header/Header';
 import Rows from './Rows/Rows';
-import { keys } from './TitleKeys/TitleKeys';
 import { Container } from './styles';
 
 import GlobalStateContext from '../../global/GlobalStateContext';
@@ -19,12 +18,14 @@ const Table = ({ data }) => {
 		setIdCode(id);
 		setOpen(true);
 	};
+	const title = [ 'código', 'categoria', 'nome', 'provedor', 'custo', 'editar', 'apagar' ];
+
 	return (
 		<Container>
 			<EditModal open={open} thisId={idCode} callFunction={() => setOpen(false)} />
 
 			<table>
-				<Header keys={keys} />
+				<Header keys={title} />
 				<tbody>
 					{data.map((line) => (
 						<Rows

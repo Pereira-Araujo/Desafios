@@ -1,21 +1,33 @@
-import ButtonAddComponent from '../../../components/ButtonsComponent/ButtonAddComponent';
-import ButtonGridComponent from '../../../components/ButtonsComponent/ButtonChangeViewComponent/ButtonGridComponent';
-import ButtonTableComponent from '../../../components/ButtonsComponent/ButtonChangeViewComponent/ButtonTableComponent';
+import { useState, useContext } from 'react';
+import AddModal from '../../../components/Modals/AddModal/AddModal';
+import GlobalStateContext from '../../../global/GlobalStateContext';
+import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
+import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
+import CalendarViewDayOutlinedIcon from '@mui/icons-material/CalendarViewDayOutlined';
+import { OptionsList } from './styles';
+
 const Options = () => {
+	const [ open, setOpen ] = useState(false);
+	const { setView } = useContext(GlobalStateContext);
+
 	return (
-		<ul>
-			<li>
-				<ButtonAddComponent text="Novo" />
-			</li>
+		<main>
+			<AddModal open={open} callFunction={() => setOpen(false)} />
 
-			<li>
-				<ButtonGridComponent text="Cards" />
-			</li>
+			<OptionsList>
+				<li onClick={() => setOpen(true)}>
+					<AddBoxOutlinedIcon />NOVO
+				</li>
 
-			<li>
-				<ButtonTableComponent text="Lista" />
-			</li>
-		</ul>
+				<li onClick={() => setView('grid')}>
+					<GridViewOutlinedIcon />CARDS
+				</li>
+
+				<li onClick={() => setView('list')}>
+					<CalendarViewDayOutlinedIcon />LISTA
+				</li>
+			</OptionsList>
+		</main>
 	);
 };
 

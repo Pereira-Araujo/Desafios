@@ -1,8 +1,9 @@
 import { useContext } from 'react';
 import Button from '@mui/material/Button';
-import { Container, Input, Content, TopContent, FormColumns, FormEnd,Action } from './styles';
-import GlobalStateContext from '../../../global/GlobalStateContext';
-import { postProduct } from '../../../services/Api/endpoints';
+import { Container, Input, Content, TopContent, FormColumns, FormStart,Action } from './styles';
+import GlobalStateContext from '../../../../global/GlobalStateContext';
+import { postProduct } from '../../../../services/Api/endpoints';
+
 const AddForm = () => {
 	const { formData, setFormData } = useContext(GlobalStateContext);
 
@@ -54,7 +55,7 @@ const AddForm = () => {
 					value={formData.provider}
 					onChange={(e) => setFormData({ ...formData, provider: e.target.value })}
 				/>
-				<FormEnd>
+				<FormStart>
 					<Input
 						required
 						label="Valor "
@@ -62,7 +63,7 @@ const AddForm = () => {
 						value={formData.cost}
 						onChange={(e) => setFormData({ ...formData, cost: e.target.value })}
 					/>
-				</FormEnd>
+				</FormStart>
 			</Content>
 			<Action>
 				<Button variant="contained" onClick={newProduct}>

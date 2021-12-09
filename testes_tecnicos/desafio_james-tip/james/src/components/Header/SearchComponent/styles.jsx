@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colorDefault, lightGrey } from '../../styles/colors';
+import { colorDefault, lightGrey } from '../../../styles/colors';
 
 export const SearchInput = styled.input`
 	height: 1.5rem;

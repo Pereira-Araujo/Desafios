@@ -1,5 +1,5 @@
 import Drawer from '@mui/material/Drawer';
-import AddForm from '../../Forms/AddForm/AddForm';
+import AddForm from '../Forms/AddForm/AddForm'
 
 export default function AddModal({ open, callFunction, thisId }) {
 	return (

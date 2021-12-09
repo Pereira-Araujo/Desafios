@@ -25,7 +25,6 @@ export const Container = styled.main`
 		img {
 			width: 6rem;
 			height: 6rem;
-			
 		}
 		.myAvatar {
 			border-radius: 50%;
@@ -36,17 +35,6 @@ export const Container = styled.main`
 	}
 
 	section {
-		ul {
-			margin-top: 4rem;
-			width: 7rem;
-			height: 12rem;
-
-			animation-name: showAbout;
-			animation-duration: 4s;
-			animation-fill-mode: forwards;
-			position: relative;
-		}
-
 		span {
 			font-weight: bolder;
 			cursor: pointer;

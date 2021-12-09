@@ -1,4 +1,4 @@
-import SearchComponent from '../../components/SearchComponent';
+import SearchComponent from "./SearchComponent";
 import { Container } from './styles';
 
 const Header = ({ title, content, callFunction, searchValue }) => {
