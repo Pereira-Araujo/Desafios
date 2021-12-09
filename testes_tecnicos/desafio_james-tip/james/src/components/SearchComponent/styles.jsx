@@ -10,8 +10,8 @@ export const SearchInput = styled.input`
 	border-radius: 6px;
 	color: ${colorDefault};
 
-	font-family: "Nunito", sans-serif;
-	font-weight: 600;
+	font-family: 'Nunito', sans-serif;
+		font-weight: 600;
 	letter-spacing: 2px;
 
 	::-webkit-input-placeholder {

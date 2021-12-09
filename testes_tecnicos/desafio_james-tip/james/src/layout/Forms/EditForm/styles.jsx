@@ -4,7 +4,7 @@ export const Container = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 text-align:center;
 
   height: 400px;
