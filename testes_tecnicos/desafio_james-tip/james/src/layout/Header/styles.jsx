@@ -14,7 +14,6 @@ export const Container = styled.main`
 
 	section {
 		margin-top: 0.5rem;
-		background: blue;
 		min-height: 8rem;
 		width: 70vw;
 		border-radius: 16px;

@@ -9,18 +9,15 @@ export const Container = styled.main`
 	margin-top: 2rem;
 
 	table {
-		font-family: "Nunito", sans-serif;
-
+		font-family: 'Noto Sans', sans-serif;
 		width: 98vw;
 
 		thead {
 			background: ${primary};
 		}
 		tbody {
-			font-weight: bold;
-			cursor:pointer;
-
-			
+			font-weight: 500;
+			cursor: pointer;
 		}
 	}
 `;
