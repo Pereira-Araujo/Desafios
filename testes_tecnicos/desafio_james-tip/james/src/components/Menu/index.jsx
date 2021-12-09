@@ -4,11 +4,11 @@ import GlobalStateContext from '../../global/GlobalStateContext';
 import MeIcon from '../../assets/avatar.png';
 import JamesIcon from '../../assets/james_icon.png';
 import { changeText } from '../../services/changeText';
-import {exit} from '../../services/authentication'
+import { exit } from '../../services/authentication';
 import { Container } from './styles';
 
-import About from './About';
-import Options from './Options'
+import About from '../About';
+import Options from './Options';
 
 const Menu = () => {
 	const { showAbout, setShowAbout } = useContext(GlobalStateContext);
@@ -24,13 +24,7 @@ const Menu = () => {
 				<h3>James Test</h3>
 			</figure>
 
-			<section>
-				{showAbout ? (
-					<About />
-				) : (
-					<Options/>
-				)}
-			</section>
+			<section>{showAbout ? <About /> : <Options />}</section>
 
 			<footer>
 				<p onClick={() => setShowAbout(!showAbout)}>{changeText(showAbout, 'Menu', 'Sobre')}</p>

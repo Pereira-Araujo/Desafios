@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import AddModal from '../../../layout/Modals/AddModal/AddModal';
+import AddModal from '../../../components/Modals/AddModal/AddModal';
 import IconButton from '@mui/material/IconButton';
 import { ButtonIcon } from './styles';
 
