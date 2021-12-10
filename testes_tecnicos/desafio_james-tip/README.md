@@ -23,8 +23,8 @@ Criar app com CRUD básico para produtos.
 ## Descrição:
 
  - O App foi pensado como uma plataforma para os clientes da empresa, onde eles poderiam consultar produtos de modo fácil, adicioná-los,editá-los e exclui-los. Como sendo uma aplicação em tese, para clientes, **adicionei uma tela de login** :
-   - **email:    james@tip.com.br**
-   - **password: testando12**
+   - **email:    james@tip.com**
+   - **password: testando123**
  
 - Para os **dados** criei uma **fake-api** com [JSONPlaceholder](https://jsonplaceholder.typicode.com/) a qual está disponivel aqui:https://github.com/Pereira-Araujo/users-api
 
