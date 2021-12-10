@@ -9,6 +9,9 @@
 <details>
 <summary>Mais imagens</summary>
   
+  
+  ![Captura de tela 2021-12-10 170147](https://user-images.githubusercontent.com/60116988/145634610-2cad3a09-ab4e-4cb4-9dd4-d5e40416c809.png)
+
 ![Captura de tela 2021-12-03 190314](https://user-images.githubusercontent.com/60116988/144678749-79359201-d6c8-4d36-921b-b0f7608f2004.png)
   
 </details>
@@ -34,9 +37,9 @@ Criar app com CRUD básico para produtos.
 - [x] Pesquisa de produtos
 - [x] CRUD
 - [x] Possibilidade de escolha de visualização dos produtos (tabela ou cards)
-- [ ] Edição das fontes de texto
-- [ ] Mudança para um menu mais amigável
-- [ ] Mudança para modais mais amigáveis
+- [x] Edição das fontes de texto
+- [x] Mudança para um menu mais amigável
+- [x] Mudança para modais mais amigáveis
 - [ ] Responsividade
 
 
