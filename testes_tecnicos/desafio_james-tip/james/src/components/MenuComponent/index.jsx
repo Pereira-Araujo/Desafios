@@ -10,7 +10,7 @@ import { Container } from './styles';
 import About from './About';
 import Options from './Options';
 
-const Menu = () => {
+const MenuComponent = () => {
 	const { showAbout, setShowAbout } = useContext(GlobalStateContext);
 
 	return (
@@ -35,4 +35,4 @@ const Menu = () => {
 		</Container>
 	);
 };
-export default Menu;
+export default MenuComponent;

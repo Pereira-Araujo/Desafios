@@ -8,7 +8,7 @@ import GlobalStateContext from '../../global/GlobalStateContext';
 import EditModal from '../Modals/EditModal/EditModal';
 import { delProduct } from '../../services/Api/endpoints';
 
-const Table = ({ data }) => {
+const TableComponent = ({ data }) => {
 	const { open, setOpen, idCode, setIdCode } = useContext(GlobalStateContext);
 	const removeProduct = (id) => {
 		return delProduct(id);
@@ -44,4 +44,4 @@ const Table = ({ data }) => {
 		</Container>
 	);
 };
-export default Table;
+export default TableComponent;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { primary, secondary, colorToGradient } from "../../styles/colors";
+import { primary, secondary, colorToGradient } from "../../../styles/colors";
 
 export const FormContainer = styled.form`
   width: 40vw;

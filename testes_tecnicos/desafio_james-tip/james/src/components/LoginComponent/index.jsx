@@ -1,11 +1,11 @@
 import { ContainerFlex, Wallpaper } from "./styles";
-import SignInComponent from './../../components/SignInComponent/index';
+import SignInComponent from './SignInComponent';
 // {
 // 	"email": "james@tip.com.br",
 // 	"password": "testando12"
 // }
 
-const Login = () => {
+const LoginComponent = () => {
   return (
     <ContainerFlex>
       <Wallpaper></Wallpaper>
@@ -18,4 +18,4 @@ const Login = () => {
     </ContainerFlex>
   );
 };
-export default Login;
+export default LoginComponent;
