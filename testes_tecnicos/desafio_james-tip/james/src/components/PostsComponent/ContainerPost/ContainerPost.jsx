@@ -1,7 +1,7 @@
 
 import { useContext } from 'react';
 import GlobalStateContext from '../../../global/GlobalStateContext';
-import PostCard from '../../Posts/PostCard/PostCard';
+import PostCard from '../../PostsComponent/PostCard/PostCard';
 import EditModal from '../../Modals/EditModal/EditModal';
 import {Container } from './styles';
 import { delProduct } from '../../../services/Api/endpoints';

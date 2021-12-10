@@ -4,12 +4,12 @@ import GlobalStateContext from '../../global/GlobalStateContext';
 import { HomePosts, Container } from './styles';
 import { useFilter } from '../../hooks/useFilter';
 
-import ContainerPost from '../Posts/ContainerPost/ContainerPost';
-import Menu from '../Menu';
-import Table from '../Table/Table';
-import Header from '../Header';
+import ContainerPost from '../PostsComponent/ContainerPost/ContainerPost';
+import MenuComponent from '../MenuComponent';
+import TableComponent from '../TableComponent/Table';
+import HeaderComponent from '../HeaderComponent';
 
-const Home = () => {
+const HomeComponent = () => {
 	useProtectedPage();
 	const { product,find, setFind, view } = useContext(GlobalStateContext);
 
@@ -22,9 +22,9 @@ const Home = () => {
 
 	return (
 		<Container>
-			<Menu />
+			<MenuComponent />
 			<div>
-				<Header
+				<HeaderComponent
 					title={'Bem vindo !'}
 					content={'Pesquise pelo código, nome , categoria ou valor'}
 					callFunction={handleSearch}
@@ -32,7 +32,7 @@ const Home = () => {
 				/>
 				<HomePosts>
 					{view === 'list' ? (
-						<Table data={filteredPosts} />
+						<TableComponent data={filteredPosts} />
 					) : (
 						<section>{filteredPosts.length > 0 && <ContainerPost posts={filteredPosts} />}</section>
 					)}
@@ -42,4 +42,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default HomeComponent;

@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import GlobalStateContext from '../../global/GlobalStateContext';
+import GlobalStateContext from '../../../global/GlobalStateContext';
 
-import { userLogin } from '../../services/authentication';
-import InputComponent from '../InputComponent';
-import JamesIcon from '../../assets/james_icon.png';
+import { userLogin } from '../../../services/authentication';
+import InputComponent from '../../InputComponent';
+import JamesIcon from '../../../assets/james_icon.png';
 import { FormContainer, LoginButton, BorderIcon } from './styles';
 
 const SignInComponent = ({ buttonName, title }) => {

@@ -6,7 +6,7 @@ export const authentication = (data, navigate) => {
 	axios
 		.post(`${Auth}`, data)
 		.then((response) => {
-			localStorage.setItem('token', response.data.token);
+			localStorage.setItem('access_token', response.data.access_token);
 			goToInitial(navigate);
 		})
 		.catch(() => {
@@ -16,7 +16,7 @@ export const authentication = (data, navigate) => {
 
 export const exit = () => {
 	if (window.confirm('Certeza?')) {
-		localStorage.removeItem('token');
+		localStorage.removeItem('access_token');
 		window.location.reload(false);
 	}
 };

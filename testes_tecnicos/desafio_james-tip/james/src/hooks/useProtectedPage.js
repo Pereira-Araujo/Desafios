@@ -5,7 +5,7 @@ import { goToLogin } from "../routes/coordinator";
 const useProtectedPage = () => {
   const history = useNavigate();
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    const token = localStorage.getItem("access_token");
     if (!token) {
       goToLogin(history);
     }
